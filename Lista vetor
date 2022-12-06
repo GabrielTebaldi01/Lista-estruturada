@@ -79,5 +79,29 @@ int main(){
 /*exercicio numero 4*/
 
 
+#include  <stdio.h>
+#include <math.h>
+#include<time.h>
+#include <stdlib.h>
+
+int main(){
+	
+	char letras[30];
+	int i;
+	
+	
+	printf("Me informe 30 letras: ");
+	fflush(stdin);
+    fgets(letras,30,stdin);
+    
+    
+	
+	for (i = 29; i >=0; i--){
+       printf(" A ordem inversa eh : %c\n",letras[i]);       
+    }
+
+}
+
+
 
 
