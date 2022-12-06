@@ -48,3 +48,36 @@ int nota[numeroA],i;
 }
 
 
+/*exercicio numero 3(duvida nesse exercicio)*/
+
+
+
+#include  <stdio.h>
+#include <math.h>
+#include<time.h>
+#include <stdlib.h>
+
+int main(){
+	
+	int dados [10], soma=0, i;
+	
+	
+	for(i=0; i<=10; i++){
+		printf("Digite um numero para soma: ");
+		scanf("%f", &dados[i]);
+		
+		soma= soma + dados[i];
+	}
+	
+	printf("Soma = %d", soma);
+	
+	
+
+}
+
+
+/*exercicio numero 4*/
+
+
+
+
