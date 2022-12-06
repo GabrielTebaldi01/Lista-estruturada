@@ -153,5 +153,51 @@ int main(){
 /*exercicio numero 6*/
 
 
+#include  <stdio.h>
+#include <math.h>
+#include<time.h>
+#include <stdlib.h>
+	
+    float maior(float salario[100]){
+    
+	float maior = 0.0;
+    
+    for ( int i = 0; i <= 100; i++)
+    {
+        if (salario[i] > maior )
+        {
+           maior = (salario[i]);
+        }
+        
+    }
+    
+    return maior;
+}
+
+
+int main (){
+    
+	int matricula[100];
+    float salario[100],maior2;
+    
+	
+	for (int i = 0; i <= 100; i++)
+    {
+       printf("Me informe a matricula do funcionario: ");
+       scanf("%d",&matricula[i]);
+       
+	   printf("Me forneca o salario do funcionario: ");
+       scanf("%f",&salario[i]);
+    }
+    
+   maior2 = maior (salario);
+    printf("O maior eh %.2f ",maior2);
+}
+
+
+
+/*exercicio numero 7*/
+
+
 
 
