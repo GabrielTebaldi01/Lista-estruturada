@@ -1,3 +1,26 @@
+/*exercicio numero 1*/
+
+
+#include  <stdio.h>
+#include <math.h>
+#include<time.h>
+#include <stdlib.h>
+
+int main(){
+
+int nota[30],i;
+    
+	
+	
+	for (i=0;i<=30;i++){
+        printf("Informe a nota do aluno %d :",i+1);
+        scanf("%d\n\n",&nota[i]);
+    }
+    
+}
+
+
+
 /*exercicio numero 2*/
 
 
