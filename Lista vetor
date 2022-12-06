@@ -199,5 +199,47 @@ int main (){
 /*exercicio numero 7*/
 
 
+#include  <stdio.h>
+#include <math.h>
+#include<time.h>
+#include <stdlib.h>
+	
+int main(){
+   	
+   	float cd[100],cpu10[100],cpu,cpuFinal[100];
+    int i;
+    
+    
+    for ( i = 0; i <=100; i++){
+        printf("Me informe o valor do CD :");
+        scanf("%f",&cd[i]);
+         }
+
+
+    printf("Qual valor de aumento: ");
+    scanf("%f",&cpu);
+
+
+    for ( i = 0; i <= 100; i++){
+        cpuFinal[i]= cd[i]+(cd[i]*(cpu/100));
+    }
+
+
+    printf("Valor inicial\n\nValor com 10%%\n\nValor com %.2f%%\n",cpu);
+
+    for ( i = 0; i <= 100; i++){
+        printf("%.2f\t\t%.2f\t\t%.2f",cd[i], cpu10[i], cpuFinal[i]);
+    }
+   	
+   	
+	   return 0;
+   	
+   	  	
+}
+
+
+/*exercicio numero 8*/
+
+
 
 
