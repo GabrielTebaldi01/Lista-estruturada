@@ -290,6 +290,41 @@ int main(){
 /*exercicio numero 10*/
 
 
+#include  <stdio.h>
+#include <math.h>
+#include<time.h>
+#include <stdlib.h>
+	
+int main (){
+    
+	
+	int notas[80], i, j;
+    
+	for ( i = 0; i < 10; i++)
+    {
+       printf("Me informe a nota do aluno:");
+       scanf("%d",&notas[i]);
+    }
+    
+    for ( i = 0; i <= 80; i++){
+       
+	    for ( j = 0; j < 10; j++){
+            
+			if (notas[i]== notas[j]){
+            
+			printf("Nota %d aparece %d",notas[i],notas[j]);
+            
+			}
+            
+        }
+        
+        
+    }   
+    
+    return 0;
+}
+
+
 
 
 
