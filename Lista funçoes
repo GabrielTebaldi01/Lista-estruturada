@@ -43,3 +43,94 @@ int main (){
 
 
 /*exercicio 2*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int printMes (int mes){
+    switch (mes)
+    {
+        case 1:
+            printf("Janeiro");
+            break;
+        case 2:
+            printf("Fevereiro");
+            break;
+        case 3:
+            printf("marco");
+            break;
+        case 4:
+            printf("abriu");
+            break;
+        case 5:
+            printf("Maio");
+            break;
+        case 6:
+            printf("Junho ");
+            break;
+        case 7:
+            printf("Julho");
+            break;
+        case 8:
+            printf("agosto");
+            break;
+        case 9:
+            printf("setembro");
+            break;
+        case 10:
+            printf("Outubro");
+            break;
+        case 11:
+            printf("Novembro");
+            break;
+        case 12:
+            printf("Dezembro");
+            break;
+        default:
+            printf("Mes nao fornecido");
+            break;
+    }
+}
+int main (){
+    int mes ;
+    printf("Informe o mes:");
+    scanf("%d",&mes);
+    printMes(mes);
+}
+
+
+/*exercicio 3*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int conversao(double tf)
+{
+    double tc;
+tc = (tf - 32) * (5.0/9.0);
+   
+   printf("A temperatura em Celsius e:%.2lf",tc);
+}
+
+
+
+int main(){
+    double tf ;
+    
+	printf("Me forneca a temperatura em Fahrenheit:");
+    scanf("%lf",&tf);
+    
+	 conversao(tf);
+}
+
+
+/*exercicio 4*/
+
+
+
