@@ -1,1 +1,45 @@
+/*exercicio 1*/
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int maior(){
+    
+	
+	int x[2],i;
+    
+	
+	for ( i = 0; i < 2; i++){
+         printf("Me informe o numero:");
+         scanf("%d",&x[i]);
+    }
+    
+	
+	if (x[0] > x[1])
+    {
+       printf("Esse e o maior numero %d",x[0]);
+    }
+	
+	else if (x[1] > x[0])
+    {
+        printf("Esse e o maior numero %d",x[1]);
+    }
+	
+	else
+	{
+        printf("Iguais");
+    }
+    
+    
+    
+}
+int main (){
+    maior();
+    
+    return 0;
+}
+
+
+/*exercicio 2*/
