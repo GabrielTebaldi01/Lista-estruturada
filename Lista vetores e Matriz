@@ -49,3 +49,64 @@ int main(){
         }
     }
 }
+
+
+/*exercicio 2*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int main(){
+    
+	
+	int vetor[10],vetor1[10],vetor2[10],i,calculo,par[10],impar[10];
+    
+	
+	
+	for ( i = 0; i < 10; i++){
+        printf("Me informe um numero: ");
+        scanf("%d",&vetor[i]);
+        
+		calculo = vetor[i] %2;
+        
+		
+		if (calculo ==0)
+        {
+            vetor1[i]=vetor[i];
+            par[i] = 1;
+        }else if (calculo > 0)
+        {
+           vetor2[i]=vetor[i];
+            impar[i]=1;
+        }  
+    }
+    
+	
+	for ( i = 0; i < 10; i++){
+      if (impar[i]==1)
+      {
+       printf("Numero impar  %d na posicao %d\n\n",vetor2[i],i);
+      }  
+    }
+   
+   
+    for ( i = 0; i < 10; i++){
+        
+		
+		if (par[i]==1 )
+      {
+        printf("Numero par %d na posicao %d\n\n",vetor1[i],i);
+      }
+    }
+    
+    
+    
+    
+    return 0;
+}
+
+
+/*exercicio 3*/
