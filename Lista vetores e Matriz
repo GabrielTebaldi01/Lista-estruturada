@@ -110,3 +110,41 @@ int main(){
 
 
 /*exercicio 3*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int main (){
+    int numero [10],i, a, j;
+    
+	
+	for ( i = 0; i < 10; i++){
+       
+	   
+	   printf("Me forneca o numero: ");
+       scanf("%d",&numero[i]);
+       
+	   
+	   a=numero[i];
+       
+	   
+	   for ( j = 0; j < 10; j++){
+            
+			
+			if (a ==numero[j]){
+                
+				printf("Numero %d ja existe, informe outro :",numero[j]);
+                scanf("%d",&numero[j]);
+                
+            }
+            
+        }
+    
+    }
+}
+
+
+/*exercicio 4*/
