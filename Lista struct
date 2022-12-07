@@ -101,3 +101,69 @@ int main(){
 
 /*exercicio 4*/
 
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+  struct dados
+{
+ char marca[30],modelo[50],cor[30],motorizacao[50];
+ int portas;
+};
+
+
+int localdeDados(){
+  
+  struct dados carro[10];
+  
+  int i;
+   for ( i = 0; i < 10; i++){
+   	
+   	
+    printf("Informe a marca do veiculo :");
+    fflush(stdin);
+    fgets(carro[i].marca,30,stdin);
+    
+	
+	printf("Informe o modelo do veiculo :");
+    fflush(stdin);
+    fgets(carro[i].modelo,50,stdin);
+    
+	
+	printf("informe a cor do veiculo :");
+    fflush(stdin);
+    fgets(carro[i].cor,30,stdin);
+    
+	
+	printf("informe a motorizacao do veiculo :");
+    fflush(stdin);
+    fgets(carro[i].motorizacao,50,stdin);
+    
+	
+	printf("Informe o numero de portas do veiculo:");
+    scanf("%d",&carro[i].portas);
+   }
+   
+}
+int exibirDados(){
+  struct dados carro[10];
+  int i;
+  
+  for ( i = 0; i < 10; i++)
+  {
+    
+  printf ("O carro %d\nmarca:%s\nmodelo:%s\ncor:%s\n,motorizacao;%s\nQuantidade de portas:%d",carro[i].marca,carro[i].modelo,carro[i].cor,carro[i].motorizacao,carro[i].portas);
+  }
+  
+}
+int main(){
+  localdeDados();
+  exibirDados();
+  
+}
+
+
+/*exercicio 5*/
+
