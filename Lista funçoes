@@ -193,5 +193,30 @@ int main (){
 /*exercicio 6*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
 
+
+int equacaoIMC (float peso,float altura){
+
+    float imc;
+
+    imc = peso/pow(altura,2);
+
+    printf("Indice de massa corporal = %.2f",imc);
+}
+
+int main (){
+    float altura,peso;
+
+    printf("Me informe a altura do paciente em metros:");
+    scanf("%f",&altura);
+
+    printf("Agora me informe o peso do paciente em quilos:");
+    scanf("%f",&peso);
+
+    equacaoIMC(peso,altura);
+    
+}
 
