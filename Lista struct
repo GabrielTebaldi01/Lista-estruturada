@@ -1,1 +1,46 @@
+/*exercicio 1*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+struct Pessoa
+{
+    char nome[50],endereco[50]; 
+    int telefone;
+};
+
+
+int main (){
+  
+  struct Pessoa informacao[3];
+  int i ;
+  
+  for ( i = 0; i <3 ; i++){
+      
+      printf("Informe o nome da pessoa: ");
+      fflush(stdin);
+      fgets(informacao[i].nome,50,stdin);
+      
+	  
+	  printf("Informe o endereco da pessoa: ");
+      fflush(stdin);
+      fgets(informacao[i].endereco,50,stdin);
+      
+	  
+	  printf("Informe o telefone da pessoa: ");
+      scanf("%d",&informacao[i].telefone);
+  }
+  for ( i = 0; i < 3; i++)
+  {
+    printf("Infos:\n%s\n\n%s\n\n%d",informacao[i].nome,informacao[i].endereco,informacao[i].telefone);
+  }
+}
+
+
+/*exercicio 2*/
+
+
 
