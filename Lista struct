@@ -43,4 +43,61 @@ int main (){
 /*exercicio 2*/
 
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+struct DadosAluno
+{
+  char nome[30];
+  int idade;
+};
+int main(){
+  struct DadosAluno informacao ;
+  
+  
+  printf("Informe o nome do aluno:  ");
+  fflush(stdin);
+  fgets(informacao.nome,30,stdin);
+  
+  printf("Informe a idade do aluno:  ");
+  scanf("%d", &informacao.idade);
+  
+  printf("Nome : %s\n\Idade : %d\n\n", informacao.nome, informacao.idade);
+}
+
+
+/*exercicio 3*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+struct exercicio 
+{
+  
+  char x[10];
+  int y;
+  
+  
+};
+
+
+int main(){
+  struct exercicio numero3;
+  
+  printf("Informe a string:");
+  fflush(stdin);
+  fgets(numero3.x,10,stdin);
+  
+  
+  printf("Informe o numero inteiro");
+  scanf("%d",&numero3.y);
+}
+
+
+/*exercicio 4*/
 
