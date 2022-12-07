@@ -1,1 +1,51 @@
+/*exercicio 1*/
 
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+int main(){
+    int matricula[4],i,notas[4],proximo ,c=0, procurar;
+    
+    
+    for ( i = 0; i <=4; i++)
+    {
+        printf("Informe a matricula do aluno:" );
+        scanf("%d",&matricula[i]);
+        printf("Informe a nota do aluno %d:",i+1);
+         scanf("%d",&notas[i]);
+        printf("Deseja acrescentar algum usuario (1 ou -1): ");
+        fflush(stdin);
+        scanf("%d", &proximo);
+        c ++;
+                
+        if(proximo == -1){
+            printf("Numero de pessoas cadastradas %d\n\n", c);
+            break;
+        }
+    }
+    for ( i = 0; i <=10; i++)
+    {
+        printf("Deseja realizar consulta de notas (1 ou -1):");
+        scanf("%d",&proximo);
+        if (proximo == 1)
+        {
+            printf("Me forneca a matricula:");
+            scanf("%d",&procurar);
+            for ( i = 0; i < 4; i++)
+            {
+                if (procurar == matricula[i])
+                {
+                printf("Matricula %d\nNota%d \n\n",matricula[i],notas[i]);
+                    break;
+                }
+            }
+        }
+        else if( proximo == -1)
+        {
+            break;
+        }
+    }
+}
